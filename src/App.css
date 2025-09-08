@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+    /* scroll-behavior: smooth; */
+}
+body{
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.bg-image {
+  background-image: url('/src/assets/header.jpg');  
+  background-size: cover;   /* puri screen cover kare */
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ----------------------------------------------- */
+.user-image{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    animation: scaleImage 3s linear infinite;
+    overflow: hidden;
+}
+@keyframes scaleImage{
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);  
+    }
+    50%{
+        filter: grayscale(1);
+        transform: scale(1.1); 
+        box-shadow: 3px 3px 10px black; 
+    }
+    100%{
+        filter: grayscale(0);
+        transform: scale(1); 
+    }
+}
+/* ------------------------------------------- */
+.icon-dots{
+    z-index: 5;
+    bottom: -1rem;
+    right: 2rem;
+    animation: dotsAnimation 3s linear infinite;
+}
+@keyframes dotsAnimation {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.icon-cube{
+    z-index: 5;
+    top: -0.8em;
+    right: 1em;
+    animation: cubeAnimation 3s linear infinite;
+}
+@keyframes cubeAnimation {
+    0%{
+        transform: rotateY(0deg) translateY(0px);
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-12px);
+    }
+    100%{
+        transform: rotateY(360deg) translateY(0px);
+    }
+}
+.icon-circle{
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    animation: circleAnimation 3s linear infinite;
+    /* shake effect */
+}
+@keyframes circleAnimation {
+    0%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateX(15px);
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon-zigzak{
+    z-index: 5;
+    top: 1.5em;
+    left: -0.3em;
+    animation: zigzakAnimation 3s linear infinite;
+}
+@keyframes zigzakAnimation {
+    50%{
+        left: 5%;
+        top: 2%;
+    }
+}
+.icon-plus{
+    z-index: 5;
+    top: -0.8rem;
+    left: 50%;
+    animation: plusAnimation 3s linear infinite;
+}
+@keyframes plusAnimation {
+    50%{
+        top: 3%;
+        left: 48%;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+/* ---------- */
+.read-btn::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color:#fff;
+    transform: scaleX(0);
+    transition: transform 0.8s linear;
+    transform-origin: left;
+    z-index: -1;
+    overflow: hidden;
+    
+}
+.read-btn:hover::before{
+    transform: scaleX(1); 
+     
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ---------------------- */
+.project-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f9a;
+}
+.project-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+}
+.project-card:hover::before{
+    transform: scaleX(1);
 }
