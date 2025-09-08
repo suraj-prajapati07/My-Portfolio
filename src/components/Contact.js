@@ -16,13 +16,13 @@ const contactData = [
         id: 1,
         icon: <FaLocationDot/>,
         heading: "Address:",
-        subHeading: "New Mexico, 31134", 
+        subHeading: "Ranchi, 31134", 
     },
     {
         id: 2,
         icon: <CgMail/>,
         heading: "My Email:",
-        subHeading: "mymail@mail.com", 
+        subHeading: "sp407522@gmail.com", 
     },
     {
         id: 3,
