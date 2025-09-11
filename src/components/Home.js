@@ -11,7 +11,7 @@ import zigzag from "../assets/anemyIcon/zigzags.png";
 
 const Home = () => {
   return (
-    <div id='home' className='bg-image  flex flex-col justify-between'>
+    <div id='home' className='bg-image overflow-y-hidden flex flex-col justify-between'>
         <div className='relative w-10/12 mx-auto py-20'>
             <div className='flex flex-col md:flex-row items-center gap-10'>
                 {/* Left section */}

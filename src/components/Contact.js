@@ -23,6 +23,7 @@ const contactData = [
         icon: <CgMail/>,
         heading: "My Email:",
         subHeading: "sp407522@gmail.com", 
+        subHeading: "sp407522@gmail.com", 
     },
     {
         id: 3,
@@ -37,7 +38,7 @@ const Contact = () => {
     <div id='contact' className='relative w-full'>
         <div className='relative w-10/12 mx-auto py-20'>
             <h2 className='text-5xl font-bold text-gray-800 mx-auto text-center'>
-                Let’s discuss your Project
+                Let&apos;s discuss your Project
             </h2>
             <p className='text-[20px] text-gray-600 text-center mx-auto my-7 font-medium'>
                 I'm always open to discussing product design work or partnership opportunities.
