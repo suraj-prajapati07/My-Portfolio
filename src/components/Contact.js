@@ -16,13 +16,13 @@ const contactData = [
         id: 1,
         icon: <FaLocationDot/>,
         heading: "Address:",
-        subHeading: "New Mexico, 31134", 
+        subHeading: "Hazaribagh, JH02", 
     },
     {
         id: 2,
         icon: <CgMail/>,
         heading: "My Email:",
-        subHeading: "mymail@mail.com", 
+        subHeading: "sp407522@gmail.com", 
     },
     {
         id: 3,
@@ -88,7 +88,7 @@ const Contact = () => {
                             className=''
                         />
                     </a>
-                    <a href='#' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
+                    <a href='https://github.com/suraj-prajapati07' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
                         <FaGithub
                             fontSize={24}
                             className=''
