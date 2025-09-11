@@ -23,7 +23,6 @@ const contactData = [
         icon: <CgMail/>,
         heading: "My Email:",
         subHeading: "sp407522@gmail.com", 
-        subHeading: "sp407522@gmail.com", 
     },
     {
         id: 3,
@@ -72,30 +71,30 @@ const Contact = () => {
                 </div>
 
                 <div className='flex items-center text-purple-700 px-4 py-2 md:px-6 md:py-3 max-w-72 z-50 text-center rounded-[4px]'>
-                    <a href='#' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
+                    <a target='_blank' href='#' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
                         <FaFacebook
                             fontSize={24}
                         />
                     </a>
-                    <a href='#' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
+                    <a target='_blank' href='#' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
                         <FaInstagram
                             fontSize={24}
                             className=''
                         />
                     </a>
-                    <a href='#' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
+                    <a target='_blank' href='https://www.linkedin.com/in/suraj0227/' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
                         <FaLinkedin
                             fontSize={24}
                             className=''
                         />
                     </a>
-                    <a href='https://github.com/suraj-prajapati07' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
+                    <a target='_blank' href='https://github.com/suraj-prajapati07' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
                         <FaGithub
                             fontSize={24}
                             className=''
                         />
                     </a>
-                    <a href='#' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
+                    <a target='_blank' href='#' className='px-2 py-3 md:px-3 md:py-4 hover:bg-purple-600 hover:text-white transition-all duration-200 rounded-md'>
                         <FaBehance
                             fontSize={24}
                             className=''
